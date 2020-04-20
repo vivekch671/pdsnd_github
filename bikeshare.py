@@ -38,7 +38,7 @@ def get_day():
         day_input=input("\nPlease enter valid weekday or all:").lower()
 
     return day_input
-    print('-'*40)
+    print('-'*50)
 
 
 
@@ -93,7 +93,7 @@ def time_stats(df):
     print('\n Most common start hour: {}'.format(popular_hour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def station_stats(df):
@@ -115,7 +115,7 @@ def station_stats(df):
     print('\n Most frequent combination of start station and end station trip \: {}'.format(popular_end_station))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def trip_duration_stats(df):
@@ -133,7 +133,7 @@ def trip_duration_stats(df):
     print('\nMean travel time: {}'.format(mean_travel_time))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def user_stats(df):
@@ -158,7 +158,7 @@ def user_stats(df):
     \nMost Common Year of Birth: {}'.format(earliest_year,recent_year,common_year))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def main():
