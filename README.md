@@ -18,9 +18,13 @@ Script takes in raw input to create an interactive experience in the terminal to
 
 3) Trip duration
     - total travel time, average travel time
-    
+
 ### Files used
-Include the files used
+US Bikeshare Data for Chicago, New York City and Washington
+  - chicago.csv
+  - new_York_city.csv
+  - washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+- https://github.com/udacity/pdsnd_github
+- Csv files provided by Motivate on Udacity platform
