@@ -6,8 +6,19 @@ US Bikeshare Data Analysis
 Part of Programming for Data Science with Python Nanodegree program
 
 ### Description
-Describe what your project is about and what it does
+Python code to import US bike share data and compute some descriptive statistics.
+Script takes in raw input to create an interactive experience in the terminal to present these statistics.
 
+### Statistics computed
+1) Popular times of travel
+    - most common month, most common day of week, most common hour of day
+
+2) Popular stations and trip
+    - most common start station, most common end station, most common trip from start to end
+
+3) Trip duration
+    - total travel time, average travel time
+    
 ### Files used
 Include the files used
 
