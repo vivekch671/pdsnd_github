@@ -177,12 +177,12 @@ def main():
         else:
             print("Gender data doesn't exist for Washington city")
             print('-'*40)
-        display_data=input("\n Would you to like to see first 5 rows of data:")
+        display_data=input("\n Would you to like to see first 5 rows of data (Yes or No):")
         i=0
         while display_data.lower() == 'yes':
             print(df.iloc[i:i+5])
             i=i+5
-            display_data=input("\n Would you to like to see next 5 rows of data:")
+            display_data=input("\n Would you to like to see next 5 rows of data (Yes or No):")
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
