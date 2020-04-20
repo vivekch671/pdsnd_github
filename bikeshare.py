@@ -33,12 +33,12 @@ def get_month():
 
 def get_day():
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    day_input=input("Please enter day by which you wish to filter (all or name of day):").lower()
+    day_input=input("Please enter day by which you wish to filter (all or day of week):").lower()
     while (day_input in {'all','monday', 'tuesday', 'wednesday','thursday','friday','saturday','sunday'})== False:
         day_input=input("\nPlease enter valid weekday or all:").lower()
 
     return day_input
-    print('-'*40)
+    print('-'*50)
 
 
 
@@ -93,7 +93,7 @@ def time_stats(df):
     print('\n Most common start hour: {}'.format(popular_hour))
     """Displays time taken for computing statistics"""
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def station_stats(df):
@@ -115,7 +115,7 @@ def station_stats(df):
     print('\n Most frequent combination of start station and end station trip \: {}'.format(popular_end_station))
     """Displays time taken for computing statistics"""
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def trip_duration_stats(df):
@@ -133,7 +133,7 @@ def trip_duration_stats(df):
     print('\nMean travel time: {}'.format(mean_travel_time))
     """Displays time taken for computing statistics"""
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def user_stats(df):
@@ -158,7 +158,7 @@ def user_stats(df):
     \nMost Common Year of Birth: {}'.format(earliest_year,recent_year,common_year))
     """Displays time taken for computing statistics"""
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def main():
@@ -177,12 +177,12 @@ def main():
         else:
             print("Gender data doesn't exist for Washington city")
             print('-'*40)
-        display_data=input("\n Would you to like to see first 5 rows of data:")
+        display_data=input("\n Would you to like to see first 5 rows of data (Yes or No):")
         i=0
         while display_data.lower() == 'yes':
             print(df.iloc[i:i+5])
             i=i+5
-            display_data=input("\n Would you to like to see next 5 rows of data:")
+            display_data=input("\n Would you to like to see next 5 rows of data (Yes or No):")
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
